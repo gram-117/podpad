@@ -1,7 +1,6 @@
 {
-    "manufacturer": "Prota Designs",
-    "keyboard_name": "Printed Pad",
-    "maintainer": "noahbei",
+    "keyboard_name": "podpad",
+    "maintainer": "gram",
     "bootloader": "stm32-dfu",
     "diode_direction": "COL2ROW",
     "features": {
@@ -14,8 +13,11 @@
         "oled": true
     },
     "matrix_pins": {
-        "cols": ["B2", "B1", "B0"],
-        "rows": ["A10", "C9", "A8", "A9"]
+        "direct": [
+            ["A5", "A4", "B4"],
+            ["A6", "B14", "A15"],
+            ["B10"]
+        ]
     },
     "processor": "STM32F072",
     "url": "",
@@ -29,17 +31,14 @@
             "layout": [
                 { "matrix": [0, 0], "x": 0, "y": 0 },
                 
-                { "matrix": [1, 0], "x": 0, "y": 1 },
-                { "matrix": [1, 1], "x": 1, "y": 1 },
-                { "matrix": [1, 2], "x": 2, "y": 1 },
+                { "matrix": [1, 0], "x": 1, "y": 0 },
+                { "matrix": [2, 0], "x": 2, "y": 0 },
+                { "matrix": [0, 1], "x": 0, "y": 1 },
                 
-                { "matrix": [2, 0], "x": 0, "y": 2 },
+                { "matrix": [1, 1], "x": 0, "y": 2 },
                 { "matrix": [2, 1], "x": 1, "y": 2 },
-                { "matrix": [2, 2], "x": 2, "y": 2 },
-                
-                { "matrix": [3, 0], "x": 0, "y": 3 },
-                { "matrix": [3, 1], "x": 1, "y": 3 },
-                { "matrix": [3, 2], "x": 2, "y": 3 }
+                { "matrix": [0, 2], "x": 1, "y": 2 }
+
             ]
         }
     }
